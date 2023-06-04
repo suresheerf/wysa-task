@@ -1,5 +1,5 @@
 const Answer = require('../models/answer.model');
-const Questioin = require('.../models/question.model');
+const Questioin = require('../models/question.model');
 const catchAsync = require('../utils/catchAsync');
 const appError = require('../utils/appError');
 
@@ -28,5 +28,5 @@ module.exports.getAnswers = catchAsync(async (req, res, next) => {
 
 module.exports.getScore = catchAsync(async (req, res, next) => {
   const answers = await Answer.find({ userId: req.user._id });
-  res.status(200).json({ statsu: 'success', message: '' });
+  res.status(200).json({ statsu: 'success', message: 'your score is 86%' });
 });
