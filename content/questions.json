@@ -1,0 +1,27 @@
+[
+    {
+        "question": "That's a great goal. How long have you been struggling with your sleep?",
+        "questionType": "mcq",
+        "answerType": "string",
+        "choices": [
+            "Less than 2 weeks",
+            "2 to 8 weeks",
+            "more than 8 weeks"
+        ]
+    },
+    {
+        "question": "What time do you go to bed for sleep?",
+        "questionType": "propt",
+        "answerType": "time"
+    },
+    {
+        "question": "What time do you grt out of bed to start your day?",
+        "questionType": "propt",
+        "answerType": "time"
+    },
+    {
+        "question": "Ok. How many hours sleep do you get in a typical night?",
+        "questionType": "propt",
+        "answerType": "number"
+    }
+]
