@@ -1,5 +1,5 @@
 const Answer = require('../models/answer.model');
-const Questioin = require('../models/question.model');
+const Question = require('../models/question.model');
 const catchAsync = require('../utils/catchAsync');
 const appError = require('../utils/appError');
 
