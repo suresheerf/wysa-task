@@ -26,14 +26,7 @@ exports.signUp = catchAsync(async (req, res, next) => {
   if (!req.body.nickName || !req.body.password) {
     return next(new appError('Please pass nick name and password', 400));
   }
-  const isNickNameTaken = await User.findOne({
-    nickName: req.body.nickName
-  });
-  if (isNickNameTaken) {
-    return next(
-      new appError('Nick name already taken,Please choose somthing else', 400)
-    );
-  }
+
   const newUser = await User.create({
     nickName: req.body.nickName,
     password: req.body.password
